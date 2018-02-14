@@ -29,7 +29,7 @@ describe('array chunks module', () => {
     });
 
     it('should return error, second parameter should to be a number', () => {
-        expect(() => arrayChunks(NaN)).to.throw(TypeError);
+        expect(() => arrayChunks([], NaN)).to.throw(TypeError);
     });
   });
 
@@ -37,15 +37,22 @@ describe('array chunks module', () => {
       it('split simple array', () => {
           let arrayBefore = [1,2,3,4,5,6];
           let arrayAfter = [[1,2], [3,4], [5,6]];
+
           expect(arrayChunks(arrayBefore, 2)).to.eql(arrayAfter);
       });
 
       it('last chunk with shorter length', () => {
         let arrayBefore = [1,2,3,4,5,6,7];
         let arrayAfter = [[1,2], [3,4], [5,6], [7]];
+
         expect(arrayChunks(arrayBefore, 2)).to.eql(arrayAfter);        
       });
 
-      
+      it('return main array with single array child', () => {
+        let arrayBefore = [1,2,3,4,5,6,7];
+        let arrayAfter = [[1,2,3,4,5,6,7]];
+
+        expect(arrayChunks(arrayBefore)).to.eql(arrayAfter);  
+      });
   });
 });

@@ -23,6 +23,8 @@
     "sub arrays",
     "array",
     "chunks",
-    "partials"
+    "partials",
+    "fragments",
+    "divide"
   ]
 }
