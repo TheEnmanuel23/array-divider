@@ -11,10 +11,12 @@
   },
   "license": "MIT",
   "scripts": {
+    "lint": "eslint .",
     "test": "mocha test/**.test.js"
   },
   "dependencies": {
     "chai": "^4.1.2",
+    "eslint-config-kentcdodds": "^13.0.1",
     "mocha": "^5.0.0"
   },
   "keywords": [
@@ -26,5 +28,9 @@
     "partials",
     "fragments",
     "divide"
-  ]
+  ],
+  "devDependencies": {
+    "eslint": "^4.18.0",
+    "eslint-plugin-mocha": "^4.11.0"
+  }
 }

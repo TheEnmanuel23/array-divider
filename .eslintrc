@@ -1,0 +1,23 @@
+{
+  "env": {
+      "browser": true,
+      "node": true,
+       "mocha": true
+  },
+  "extends": [
+    "kentcdodds/possible-errors",
+    "kentcdodds/best-practices",
+    "kentcdodds/import"
+  ],
+  "plugins": [
+    "mocha"
+  ],
+  "rules": {
+    "no-unused-vars": [
+      "error",
+      {
+        "varsIgnorePattern": "should|expect"
+      }
+    ]
+  }
+}

@@ -1,8 +1,5 @@
-'use strict';
-
-const arrayChunks = require('../');
-const mocha = require('mocha');
 const expect = require('chai').expect;
+const arrayChunks = require('../');
 
 describe('array chunks module', () => {
   describe('validate return types', () => {
@@ -45,14 +42,14 @@ describe('array chunks module', () => {
         let arrayBefore = [1,2,3,4,5,6,7];
         let arrayAfter = [[1,2], [3,4], [5,6], [7]];
 
-        expect(arrayChunks(arrayBefore, 2)).to.eql(arrayAfter);        
+        expect(arrayChunks(arrayBefore, 2)).to.eql(arrayAfter);
       });
 
       it('return main array with single array child', () => {
         let arrayBefore = [1,2,3,4,5,6,7];
         let arrayAfter = [[1,2,3,4,5,6,7]];
 
-        expect(arrayChunks(arrayBefore)).to.eql(arrayAfter);  
+        expect(arrayChunks(arrayBefore)).to.eql(arrayAfter);
       });
   });
 });
