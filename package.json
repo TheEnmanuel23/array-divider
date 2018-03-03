@@ -12,7 +12,10 @@
   "license": "MIT",
   "scripts": {
     "prebuild": "rimraf dist",
-    "build": "babel --copy-files --out-dir dist --ignore *.text index.js",
+    "build": "npm-run-all --parallel build:*",
+    "build:main": "babel --copy-files --out-dir dist --ignore *.text index.js",
+    "build:umd": "webpack --output-filename index.umd.js",
+    "build:umd.min": "webpack --output-filename index.umd.min.js -p",
     "lint": "eslint index.js",
     "test": "NODE_ENV=test nyc mocha test/**.test.js",
     "watch:test": "mocha --watch",
@@ -40,12 +43,15 @@
   ],
   "devDependencies": {
     "babel-cli": "^6.26.0",
+    "babel-loader": "^7.1.3",
     "babel-preset-es2015": "^6.24.1",
     "eslint": "^4.18.0",
     "eslint-plugin-mocha": "^4.11.0",
     "ghooks": "^2.0.2",
     "npm-run-all": "^4.1.2",
-    "nyc": "^11.4.1"
+    "nyc": "^11.4.1",
+    "webpack": "^4.0.1",
+    "webpack-cli": "^2.0.10"
   },
   "nyc": {
     "check-coverage": true,
