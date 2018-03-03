@@ -19,7 +19,7 @@
     "lint": "eslint index.js",
     "test": "NODE_ENV=test nyc mocha test/**.test.js",
     "watch:test": "mocha --watch",
-    "report-coverage": "cat ./coverage/Icov.info | codecov",
+    "report-coverage": "cat ./coverage/lcov.info | codecov",
     "validate": "npm-run-all --parallel lint test build"
   },
   "dependencies": {
