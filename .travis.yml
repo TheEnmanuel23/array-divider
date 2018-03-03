@@ -10,4 +10,6 @@ branches:
 notifications:
   email: false
 script:
-  - npm run validate    
+  - npm run validate
+after-success:
+  - npm run report-coverage
