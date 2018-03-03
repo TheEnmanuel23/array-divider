@@ -12,11 +12,11 @@
   "license": "MIT",
   "scripts": {
     "prebuild": "rimraf dist",
-    "build": "babel --out-dir dist index.js",
+    "build": "babel --copy-files --out-dir dist --ignore *.text index.js",
     "lint": "eslint index.js",
     "test": "NODE_ENV=test nyc mocha test/**.test.js",
     "watch:test": "mocha --watch",
-    "validate": "npm-run-all --parallel lint test"
+    "validate": "npm-run-all --parallel lint test build"
   },
   "dependencies": {
     "babel-plugin-istanbul": "^4.1.5",
