@@ -25,6 +25,9 @@
     "eslint-config-kentcdodds": "^13.0.1",
     "mocha": "^5.0.0"
   },
+  "files": [
+    "dist"
+  ],
   "keywords": [
     "parts",
     "split",
