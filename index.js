@@ -1,4 +1,4 @@
-const arrayChunks = (arrayMain=[], chunkLength=0) => {
+const arrayDivider = (arrayMain=[], chunkLength=0) => {
   if (!Array.isArray(arrayMain)) throw new TypeError('Expected array to split');
   if (isNaN(chunkLength)) throw new TypeError('A number was expected as a second parameter');
 
@@ -16,4 +16,4 @@ const arrayChunks = (arrayMain=[], chunkLength=0) => {
   return newArr;
 }
 
-module.exports = arrayChunks;
+module.exports = arrayDivider;
