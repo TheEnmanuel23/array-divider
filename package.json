@@ -1,9 +1,9 @@
 {
-  "name": "array-chunks",
+  "name": "array-divider",
   "version": "1.0.0",
   "main": "index.js",
   "description": "Create array chunks, giving the length that each chunk will have",
-  "repository": "git@github.com:TheEnmanuel23/array-chunks.git",
+  "repository": "git@github.com:TheEnmanuel23/array-divider.git",
   "author": {
     "name": "Enmanuel Jarquin",
     "email": "info@enmisac.com",
@@ -40,7 +40,8 @@
     "chunks",
     "partials",
     "fragments",
-    "divide"
+    "divider",
+    "partition"
   ],
   "devDependencies": {
     "babel-cli": "^6.26.0",
