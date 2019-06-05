@@ -1,6 +1,6 @@
 {
   "name": "array-divider",
-  "version": "0.0.0-development",
+  "version": "1.3.0",
   "main": "index.js",
   "description": "Create array chunks, giving the length that each chunk will have",
   "repository": "git@github.com:TheEnmanuel23/array-divider.git",
