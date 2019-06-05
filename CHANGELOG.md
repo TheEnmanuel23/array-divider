@@ -1,3 +1,13 @@
+# [2.0.0](https://github.com/TheEnmanuel23/array-divider/compare/v1.4.0...v2.0.0) (2019-06-05)
+
+
+* Merge pull request #3 from TheEnmanuel23/dev ([94380d8](https://github.com/TheEnmanuel23/array-divider/commit/94380d8)), closes [#3](https://github.com/TheEnmanuel23/array-divider/issues/3)
+
+
+### BREAKING CHANGES
+
+* remove dot
+
 # [1.4.0](https://github.com/TheEnmanuel23/array-divider/compare/v1.3.5...v1.4.0) (2019-06-05)
 
 
