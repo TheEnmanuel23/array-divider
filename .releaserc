@@ -1,7 +1,8 @@
 {
   "dryRun": false,
-  "debug": true,
+  "debug": false,
   "ci": false,
+  "repositoryUrl": "git@github.com:TheEnmanuel23/array-divider.git",
   "plugins": [
     [
       "@semantic-release/commit-analyzer",
